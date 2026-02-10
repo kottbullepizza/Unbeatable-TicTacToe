@@ -3,6 +3,8 @@
 This repository features a Swing-based Tic-Tac-Toe GUI with game logic written in Java that uses bitboards for efficient state evaluation. The GUI supports human-vs-human, human-vs-engine and engine-vs-engine play. It includes a Tic-Tac-Toe engine implementing a recursive minimax algorithm for move comparison, along with a Simulator class for large-scale engine-vs-engine testing.
 
 <img width="332" height="356" alt="tic-tac-toe-preview" src="https://github.com/user-attachments/assets/08a668dc-9554-4b1e-bf98-8c296a231004" />
+<img width="158" height="356" alt="Skärmbild 2026-02-10 121910" src="https://github.com/user-attachments/assets/350e35c1-d60a-4eda-9a32-f4f54947b4fe" />
+
 
 ## How to Use
 You can toggle players between human and engine in Main.java:
@@ -45,6 +47,9 @@ The engine uses a recursive minimax search to evaluate game trees for determinin
 ### Simulator
 
 A dedicated tool to run thousands of games between bots to compare win/loss/draw percentages and performance metrics between different game strategies.
+
+<img width="291" height="145" alt="image" src="https://github.com/user-attachments/assets/39442ad0-0cae-4b85-a328-35df30b372fe" />
+
 
 ### Simulation Results
 
