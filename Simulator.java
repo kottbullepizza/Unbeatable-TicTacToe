@@ -70,9 +70,18 @@ public class Simulator {
     public String toString() {
         String str = this.XAI ? this.OAI ? "AI vs. AI\n" : "AI vs. Random\n" : this.OAI ? "Random vs. AI\n" : "Random vs. Random\n";
         str += "Number of games: " + Integer.toString(this.n) + "\n";
-        str += "X wins: " + Integer.toString(this.Xwins) + " " + Double.toString(((double) this.Xwins / this.n) * 100) + "%" + "\n";
-        str += "Draws:  " + Integer.toString(this.Draws) + " " + Double.toString(((double) this.Draws / this.n) * 100) + "%" + "\n";
-        str += "O wins: " + Integer.toString(this.Owins) + " " + Double.toString(((double) this.Owins / this.n) * 100) + "%" + "\n";
+        str += "X wins: " + Integer.toString(this.Xwins) + " " + Double.toString(this.roundValue(((double) this.Xwins / this.n) * 100)) + "%" + "\n";
+        str += "Draws:  " + Integer.toString(this.Draws) + " " + Double.toString(this.roundValue(((double) this.Draws / this.n) * 100)) + "%" + "\n";
+        str += "O wins: " + Integer.toString(this.Owins) + " " + Double.toString(this.roundValue(((double) this.Owins / this.n) * 100)) + "%" + "\n";
         return str;
+    }
+
+    /**
+     * Rounds a value to one decimal
+     * @param value a double
+     * @return a double of the original value but all decimals except one
+     */
+    public double roundValue(double value) {
+        return (double) Math.round(value * 10) / 10;
     }
 }
