@@ -38,7 +38,7 @@ To manipulate a single bit, the integer corresponding to the square is simply ad
       4 |   2 |  1
 ```
 
-This, in turn, allows the engine to check for three-in-a-row using predefined bit-masks (e.g., 7 for the bottom row, 273 for the main diagonal), which is more efficient than accessing array values.
+This, in turn, allows the engine to check for three-in-a-row using predefined bit-masks (e.g., 7 for the bottom row (4 + 2 + 1), 273 for the main diagonal (256 + 16 + 1)), which is more efficient than accessing array values.
 
 ### Tic-Tac-Toe engine
 
